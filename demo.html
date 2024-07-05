@@ -11,8 +11,9 @@
 <script>
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
+const scene = urlParams.get('scene')
 function myFunction() {
-  document.getElementById("demo").innerHTML = urlParams;
+  document.getElementById("demo").innerHTML = scene;
 }
 </script>
 
