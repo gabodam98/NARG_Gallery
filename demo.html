@@ -12,8 +12,9 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const scene = urlParams.get('scene')
+const url = "https://content.naughtycdn.com/photosets/premium/tngf/" + scene + "/large_1.jpg";
 function myFunction() {
-  document.getElementById("demo").innerHTML = scene;
+  document.getElementById("demo").innerHTML = url;
 }
 </script>
 
