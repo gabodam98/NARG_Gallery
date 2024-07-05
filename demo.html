@@ -9,8 +9,10 @@
 <button type="button" onclick="myFunction()">Try it</button>
 
 <script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+  document.getElementById("demo").innerHTML = urlParams;
 }
 </script>
 
